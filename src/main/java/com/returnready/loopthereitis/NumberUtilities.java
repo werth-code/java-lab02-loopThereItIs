@@ -3,12 +3,20 @@ package com.returnready.loopthereitis;
 
 public class NumberUtilities {
     public static String getEvenNumbers(int start, int stop) {
-        return null;
+        String evens = "";
+        for(int i = start; i < stop; i++) {
+            if (i % 2 == 0) evens += i;
+        }
+        return evens;
     }
 
 
     public static String getOddNumbers(int start, int stop) {
-        return null;
+        String odds = "";
+        for(int i = start; i < stop; i++) {
+            if (i % 2 == 1) odds += i;
+        }
+        return odds;
     }
 
 
@@ -17,11 +25,19 @@ public class NumberUtilities {
     }
 
     public static String getRange(int start) {
-        return null;
+        String range = "";
+        for(int i = 0; i < start; i++) {
+            range += i;
+        }
+        return range;
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+        String range = "";
+        for(int i = start; i < stop; i++) {
+            range += i;
+        }
+        return range;
     }
 
 
