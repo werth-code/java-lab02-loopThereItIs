@@ -43,17 +43,6 @@ public class NumberUtilitiesTest {
         Assert.assertEquals(expected, actual);
     }
 
-
-
-
-
-
-
-
-
-
-
-
     @Test
     public void testGetRange1B() {
         // : Given
@@ -67,7 +56,6 @@ public class NumberUtilitiesTest {
         // : Then
         Assert.assertEquals(expected, actual);
     }
-
 
     @Test
     public void testGetRange2B() {
@@ -83,11 +71,10 @@ public class NumberUtilitiesTest {
         Assert.assertEquals(expected, actual);
     }
 
-
     @Test
     public void testGetRange3B() {
         // : Given
-        String expected = "100101103104105106107108109";
+        String expected = "100101102103104105106107108109";
         int start = 100;
         int stop = 110;
 
@@ -96,18 +83,7 @@ public class NumberUtilitiesTest {
 
         // : Then
         Assert.assertEquals(expected, actual);
-    }
-
-
-
-
-
-
-
-
-
-
-
+    } //THIS ONE WAS MISSING '102' IN THE STRING OF CHARS
 
 
     @Test
@@ -158,22 +134,10 @@ public class NumberUtilitiesTest {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     @Test
     public void testGetEvenNumbers() {
         // : Given
-        String expected = "5791113151719";
+        String expected = "681012141618";
         int start = 5;
         int stop = 20;
 
@@ -182,12 +146,13 @@ public class NumberUtilitiesTest {
 
         // : Then
         Assert.assertEquals(expected, actual);
-    }
+    } //EVEN AND ODD STRING WERE SWAPPED
+
 
     @Test
     public void testGetOddNumbers() {
         // : Given
-        String expected = "681012141618";
+        String expected = "5791113151719";
         int start = 5;
         int stop = 20;
         int step = 5;
@@ -197,8 +162,7 @@ public class NumberUtilitiesTest {
 
         // : Then
         Assert.assertEquals(expected, actual);
-    }
-
+    } //EVEN AND ODD STRING WERE SWAPPED
 
 
     @Test
@@ -218,7 +182,7 @@ public class NumberUtilitiesTest {
 
 
     @Test
-    public void testGetExponentiationNumbers() {
+    public void testGetExponentiationNumbers() { //COMING UP AS CORRECT BUT DID NOT USE EXPONENT VARIABLE.
         // : Given
         String expected = "25100225";
         int start = 5;
