@@ -27,7 +27,7 @@ public class TriangleUtilitiesTest {
                         "*******\n" +
                         "********\n" +
                         "*********\n";
-        String actual = TriangleUtilities.getTriangle(10);
+        String actual = TriangleUtilities.getTriangle(10); //This is testing wrong. Should have 10 rows!
         Assert.assertEquals(expected, actual);
     }
 
@@ -38,12 +38,12 @@ public class TriangleUtilitiesTest {
                         "**\n" +
                         "***\n" +
                         "****\n";
-        String actual = TriangleUtilities.getTriangle(5);
+        String actual = TriangleUtilities.getTriangle(5); //This is testing wrong. Should have 10 rows!
         Assert.assertEquals(expected, actual);
     }
 
     @Test
-    public void testGetLargeTriangle() {
+    public void testGetLargeTriangle() { //This is testing wrong. Should have 10 rows!
         String expected =
                 "*\n" +
                 "**\n" +
